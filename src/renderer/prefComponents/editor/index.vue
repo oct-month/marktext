@@ -1,6 +1,6 @@
 <template>
   <div class="pref-editor">
-    <h4>bian'ji</h4>
+    <h4>编辑</h4>
     <compound>
       <template #head>
         <h6 class="title">文本编辑器设置：</h6>
