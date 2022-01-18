@@ -145,7 +145,7 @@ export default function (keybindings, userPreference, recentlyUsedFiles) {
     type: 'separator',
     visible: !isOsx
   }, {
-    label: 'Preferences...',
+    label: '首选项...',
     accelerator: keybindings.getAccelerator('file.preferences'),
     visible: !isOsx,
     click () {

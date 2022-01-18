@@ -9,7 +9,7 @@
       </span>
 
       <separator></separator>
-      <el-button size="medium" @click="openKeybindingsFile">Open keybindings.json</el-button>
+      <el-button size="medium" @click="openKeybindingsFile">打开 keybindings.json</el-button>
     </div>
   </div>
 </template>

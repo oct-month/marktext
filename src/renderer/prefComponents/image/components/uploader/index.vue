@@ -1,11 +1,10 @@
 <template>
   <div class="pref-image-uploader">
-    <h5>Uploader</h5>
+    <h5>上载器</h5>
     <section class="current-uploader">
-      <div v-if="isValidUploaderService(currentUploader)">The current image uploader is
+      <div v-if="isValidUploaderService(currentUploader)">当前图片上载器为
         {{ getServiceNameById(currentUploader) }}.</div>
-      <span v-else>Currently no uploader is selected. Please select an uploader and config
-        it.</span>
+      <span v-else>当前未选择上载器。请选择上载器并配置</span>
     </section>
     <section class="configration">
       <cur-select :value="currentUploader" :options="uploaderOptions"
@@ -51,17 +50,15 @@
         </div>
       </div>
       <div class="script" v-else-if="currentUploader === 'cliScript'">
-        <div class="description">The script will be executed with the image file path as its only
-          argument and it should output any valid value for the <code>src</code> attribute of a
-          <em>HTMLImageElement</em>.
+        <div class="description">
+          脚本将以图像文件路径作为其唯一参数执行，并且它应该为<em>HTMLImageElement</em>的<code>src</code>属性输出任何有效值。
         </div>
         <div class="form-group">
-          <div class="label">Shell script location:</div>
+          <div class="label">Shell脚本位置：</div>
           <el-input v-model="cliScript" placeholder="Script absolute path" size="mini"></el-input>
         </div>
         <div class="form-group">
-          <el-button size="mini" :disabled="cliScriptDisable" @click="save('cliScript')">Save
-          </el-button>
+          <el-button size="mini" :disabled="cliScriptDisable" @click="save('cliScript')">保存</el-button>
         </div>
       </div>
     </section>
