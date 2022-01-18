@@ -1,31 +1,31 @@
 <template>
   <div class="pref-spellchecker">
-    <h4>Spelling</h4>
+    <h4>拼写</h4>
     <compound>
       <template #head>
         <bool
-          description="Enable spell checker"
+          description="启用拼写检查器"
           :bool="spellcheckerEnabled"
           :onChange="handleSpellcheckerEnabled"
         ></bool>
       </template>
       <template #children>
         <bool
-          description="Use Hunspell instead of system spell checker on macOS and Windows 10"
+          description="在macOS和Windows 10上使用Hunspell替代系统拼写检查器"
           notes="Requires restart."
           :bool="spellcheckerIsHunspell"
           :disable="!isOsSpellcheckerSupported || !spellcheckerEnabled"
           :onChange="value => onSelectChange('spellcheckerIsHunspell', value)"
         ></bool>
         <bool
-          description="Hide marks for spelling errors"
+          description="隐藏拼写错误的标记"
           :bool="spellcheckerNoUnderline"
           :disable="!spellcheckerEnabled"
           :onChange="value => onSelectChange('spellcheckerNoUnderline', value)"
         ></bool>
         <bool
           v-show="isOsx && !spellcheckerIsHunspell"
-          description="Automatically detect document language (requires showing marks for spelling errors)"
+          description="自动检测文档语言（需要显示拼写错误的标记）"
           :bool="spellcheckerAutoDetectLanguage"
           :disable="!spellcheckerEnabled"
           :onChange="value => onSelectChange('spellcheckerAutoDetectLanguage', value)"
@@ -36,7 +36,7 @@
     <separator></separator>
 
     <cur-select
-      description="Default language for spell checker"
+      description="拼写检查器的默认语言"
       :value="spellcheckerLanguage"
       :options="availableDictionaries"
       :disable="!spellcheckerEnabled"

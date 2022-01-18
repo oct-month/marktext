@@ -1,10 +1,10 @@
 export const imageActions = [{
-  label: 'Upload image to cloud using selected uploader (must be configured below)',
+  label: '使用选定的上载器将图像上载到云（必须在下面进行配置）',
   value: 'upload'
 }, {
-  label: 'Copy image to designated relative assets or global local folder',
+  label: '将图像复制到指定的相对资源或全局本地文件夹',
   value: 'folder'
 }, {
-  label: 'Keep original location',
+  label: '保持原始位置',
   value: 'path'
 }]

@@ -26,24 +26,24 @@ export const endOfLineOptions = [{
 }]
 
 export const trimTrailingNewlineOptions = [{
-  label: 'Trim all trailing',
+  label: '删除所有末尾换行',
   value: 0
 }, {
-  label: 'Ensure exactly one trailing',
+  label: '确保只有一个末尾换行',
   value: 1
 }, {
-  label: 'Preserve style of original document',
+  label: '保留文档原始格式',
   value: 2
 }, {
-  label: 'Do nothing',
+  label: '不执行任何操作',
   value: 3
 }]
 
 export const textDirectionOptions = [{
-  label: 'Left to Right',
+  label: '从左至右',
   value: 'ltr'
 }, {
-  label: 'Right to Left',
+  label: '从右向左',
   value: 'rtl'
 }]
 

@@ -26,22 +26,22 @@ export const preferHeadingStyleOptions = [{
 }]
 
 export const listIndentationOptions = [{
-  label: 'DocFX style',
+  label: 'DocFX样式',
   value: 'dfm'
 }, {
-  label: 'True tab character',
+  label: '制表符tab',
   value: 'tab'
 }, {
-  label: 'Single space character',
+  label: '单个空格',
   value: 1
 }, {
-  label: 'Two space characters',
+  label: '两个空格',
   value: 2
 }, {
-  label: 'Three space characters',
+  label: '三个空格',
   value: 3
 }, {
-  label: 'Four space characters',
+  label: '四个空格',
   value: 4
 }]
 
@@ -60,9 +60,9 @@ export const frontmatterTypeOptions = [{
 }]
 
 export const sequenceThemeOptions = [{
-  label: 'Hand drawn',
+  label: '手绘',
   value: 'hand'
 }, {
-  label: 'Simple',
+  label: '简单',
   value: 'simple'
 }]

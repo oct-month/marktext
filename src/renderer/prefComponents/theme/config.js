@@ -20,12 +20,12 @@ export const themes = [
 ]
 
 export const autoSwitchThemeOptions = [{
-  label: 'Adjust theme at startup', // Always
+  label: '启动时调整主题', // Always
   value: 0
 }, /* {
   label: 'Only at runtime',
   value: 1
 }, */ {
-  label: 'Never',
+  label: '从不',
   value: 2
 }]

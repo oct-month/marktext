@@ -1,11 +1,11 @@
 <template>
   <div class="pref-keybindings">
-    <h4>Key Bindings</h4>
+    <h4>快捷键设置</h4>
     <div class="keybinding-info">
       <span>
-        MarkText shortcuts can be customized by editing a configuration file named <code>keybindings.json</code>.
-        More information how to use custom key bindings can be found <span class="link" @click="openKeybindingsDocumentation">online</span>.
-        All changes require a restart.
+        可以通过编辑名为 <code>keybindings.json</code> 的配置文件自定义MarkText快捷方式。
+        有关如何使用自定义密钥绑定的详细信息，请 <span class="link" @click="openKeybindingsDocumentation">联机查看</span>.
+        所有更改都需要重新启动以生效。
       </span>
 
       <separator></separator>
