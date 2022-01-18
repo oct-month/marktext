@@ -4,7 +4,7 @@
     <div class="keybinding-info">
       <span>
         可以通过编辑名为 <code>keybindings.json</code> 的配置文件自定义MarkText快捷方式。
-        有关如何使用自定义密钥绑定的详细信息，请 <span class="link" @click="openKeybindingsDocumentation">联机查看</span>.
+        有关如何使用自定义密钥绑定的详细信息，请 <span class="link" @click="openKeybindingsDocumentation">联机查看</span>。
         所有更改都需要重新启动以生效。
       </span>
 
